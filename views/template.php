@@ -4,30 +4,50 @@
     <title>Accueil myPostcrossing</title>
     <!-- CSS PERSO><-->
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <!-- CSS google FONT><-->
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <!-- CSS BOOTSTRAP><-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
 </head>
 
 <body>
-<div id="global">
-    <div id="contenu">
-        <?= $contenu ?>
-    </div>
-</div>
-
 <div class="container-fluid">
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-light bg-white">
+                <a class="navbar-brand title" href="index.php?type=home">
+                    <img src="./img/logo.png" class="logo-site" alt="logo du site" loading="lazy">
+                    myPostcrossing
+                </a>
+            </nav>
+        </div>
+    </header>
+
     <div class="container">
-        <div class="row">
-            <div class="col-6 text-right">
-                <a id="btn-page-envoyees" href="index.php?type=envoyees" class="button">Cartes Envoyées</a>
-            </div>
-            <div class="col-6 text-left">
-                <a id="btn-page-reçues" href="index.php?type=recues" class="button">Cartes Reçues</a>
+        <div id="global">
+            <div id="contenu">
+                <?= $contenu ?>
             </div>
         </div>
-        <a id="btn-page-admin" href="index.php?type=admin" class="button">Espace Admin</a>
-        <a id="btn-page-home" href="index.php?type=home" class="button">Accueil</a>
     </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a class="footer-link" href="index.php?type=about">About<a/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="#"><img class="logo" src="./img/facebook.png" alt="logo facebook"></a>
+                    <a href="#"><img class="logo" src="./img/twitter.png" alt="logo twitter"></a>
+                </div>
+            </div>
+        </div>
+
+
 </div>
 
 <!-- JS BOOTSTRAP><-->

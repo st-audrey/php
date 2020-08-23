@@ -6,6 +6,7 @@ require_once './controllers/controllerAdmin.php';
 require_once './controllers/controllerEnvoyees.php';
 require_once './controllers/controllerRecues.php';
 require_once './controllers/controller404.php';
+require_once './controllers/controllerAbout.php';
 
 class Router {
 
@@ -14,6 +15,7 @@ class Router {
     private $ctrlHome;
     private $ctrlAdmin;
     private $ctrl404;
+    private $ctrlAbout;
 
     public function __construct() {
 
@@ -22,6 +24,7 @@ class Router {
         $this->ctrlEnvoyees = new controllerEnvoyees();
         $this->ctrlRecues = new controllerRecues();
         $this->ctrl404 = new controller404();
+        $this->ctrlAbout = new controllerAbout();
     }
 
     public function routerRequete() {
@@ -35,6 +38,8 @@ class Router {
                     $this->ctrlEnvoyees->showEnvoyees();
                 } else if ($_GET['type'] == 'admin') {
                     $this->ctrlAdmin->showAdmin();
+                } else if ($_GET['type'] == 'about') {
+                    $this->ctrlAbout->showAbout();
                 }else
                     $this->ctrl404->show404();
             }

@@ -1,0 +1,72 @@
+﻿.btn-page-admin{
+    text-decoration: none!important;
+    color:black;
+    font-size: medium;
+    font-family: 'Special Elite', cursive;
+}
+.btn-page-admin:hover {
+    transition-duration: 1s;
+    color:gray;
+}
+#contenu{
+    height:750px;
+}
+
+.container
+{
+    margin: auto;
+    padding:0;
+    max-width: 1140px;
+}
+
+.title{
+    font-size: large;
+    font-family: 'Special Elite', cursive;
+}
+.footer-link{
+    text-decoration: none;
+    color:black;
+    font-family: 'Special Elite', cursive;
+    font-size: small;
+}
+.footer-link:hover{
+    text-decoration: none;
+    transition-duration: 1s;
+    color:gray;
+}
+.row-home{
+    padding-top:150px;
+}
+#map 
+{
+    height: 400px;  
+    width: 100%;  
+}
+.logo{
+    width:20px;
+    height:20px;
+}
+.logo-envoyees{
+    width:150px;
+    height:150px;
+}
+
+.logo-recues{
+    width:150px;
+    height:150px;
+
+}
+#map1 
+{
+    height: 400px;  
+    width: 100%;  
+}
+#mapleaf 
+{ 
+    height: 180px; 
+}
+
+.logo-site{
+    width:100px;
+    height:100px;
+}
