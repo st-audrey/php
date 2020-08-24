@@ -20,10 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38fb7572-2479-462a-8b2b-d3df8b002db0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/viewHome.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/viewHome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/controllerEnvoyees.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controllerEnvoyees.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/controllerRecues.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controllerRecues.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/modelCard.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/modelCard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/viewAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/viewAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/viewEnvoyees.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/viewEnvoyees.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/viewRecues.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/viewRecues.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +48,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -54,7 +62,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598133786346</updated>
-      <workItem from="1598133789599" duration="15299000" />
+      <workItem from="1598133789599" duration="32942000" />
+      <workItem from="1598252609810" duration="1263000" />
     </task>
     <servers />
   </component>
@@ -71,8 +80,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="227" y="361" key="#SQL_Dialects" timestamp="1598192302383">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="227" y="361" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1598192302383" />
+    <state x="291" y="375" key="#SQL_Resolution_Scopes" timestamp="1598195473010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="291" y="375" key="#SQL_Resolution_Scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1598195473010" />
+    <state x="442" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598195938522">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="442" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598195938522" />
     <state x="614" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598138352879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -81,5 +103,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598183561778" />
+    <state x="374" y="148" key="SettingsEditor" timestamp="1598215366256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="374" y="148" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598215366256" />
   </component>
 </project>

@@ -5,8 +5,8 @@ require_once 'controllers/controller.php';
 
 class ControllerRecues extends Controller  {
 
-    public function showRecues() {
+    public function showRecues($data) {
         $view = new Vue("recues");
-        $view->generer();
+        $view->generer(array('cartes' => $data));
     }
 }

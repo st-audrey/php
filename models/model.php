@@ -18,11 +18,10 @@ abstract class Model {
     }
 
     private function getBdd() {
-		$host='localhost';
+
 		$user='root';
 		$password='';
-		$dbname='my_postcrossing';
-		$dsn='mysql:host='. $host . ';dbname=' . $dbname . ';charset=utf8';
+		$dsn='mysql:host=localhost;dbname=mypostcrossing;port=3306;charset=utf8';
 
 
         if ($this->bdd == null) {

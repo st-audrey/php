@@ -7,6 +7,7 @@ require_once './controllers/controllerEnvoyees.php';
 require_once './controllers/controllerRecues.php';
 require_once './controllers/controller404.php';
 require_once './controllers/controllerAbout.php';
+require_once './controllers/controllerCard.php';
 
 class Router {
 
@@ -16,6 +17,7 @@ class Router {
     private $ctrlAdmin;
     private $ctrl404;
     private $ctrlAbout;
+    private $ctrlCard;
 
     public function __construct() {
 
@@ -25,6 +27,7 @@ class Router {
         $this->ctrlRecues = new controllerRecues();
         $this->ctrl404 = new controller404();
         $this->ctrlAbout = new controllerAbout();
+        $this->ctrlCard = new controllerCard();
     }
 
     public function routerRequete() {
@@ -32,15 +35,31 @@ class Router {
             if (isset($_GET['type'])) {
                 if ($_GET['type'] == 'home') {
                     $this->ctrlHome->showHome();
-                } else if ($_GET['type'] == 'recues') {
-                    $this->ctrlRecues->showRecues();
+
                 } else if ($_GET['type'] == 'envoyees') {
-                    $this->ctrlEnvoyees->showEnvoyees();
+                    $dota = $this->ctrlCard->listerEnvoyees();
+                    $this->ctrlEnvoyees->showEnvoyees($dota);
+
+                } else if ($_GET['type'] == 'recues') {
+                    $dota = $this->ctrlCard->listerRecues();
+                    $this->ctrlRecues->showRecues($dota);
+
+
                 } else if ($_GET['type'] == 'admin') {
-                    $this->ctrlAdmin->showAdmin();
+
+
+                    if (isset($_GET['action'])) {
+                        if ($_GET['action'] == "cartesenvoyees") {
+                            $this->ctrlCard->listerEnvoyees();
+                        } else if ($_GET['action'] == "cartesrecues") {
+                            $this->ctrlCard->listerRecues();
+                        }
+                    } else
+                        $this->ctrlAdmin->showAdmin();
+
                 } else if ($_GET['type'] == 'about') {
                     $this->ctrlAbout->showAbout();
-                }else
+                } else
                     $this->ctrl404->show404();
             }
         }   catch (Exception $e) {

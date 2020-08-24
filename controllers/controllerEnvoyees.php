@@ -5,8 +5,8 @@ require_once 'controllers/controller.php';
 
 class ControllerEnvoyees extends Controller  {
 
-    public function showEnvoyees() {
+    public function showEnvoyees($data) {
         $view = new Vue("envoyees");
-        $view->generer();
+        $view->generer(array('cartes' => $data));
     }
 }
