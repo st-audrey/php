@@ -46,16 +46,16 @@ class Router {
 
 
                 } else if ($_GET['type'] == 'admin') {
+                    $dotaE = $this->ctrlCard->listerEnvoyees();
+                    $dotaR = $this->ctrlCard->listerRecues();
+                    $this->ctrlAdmin->showAdmin($dotaE, $dotaR);
 
-
-                    if (isset($_GET['action'])) {
-                        if ($_GET['action'] == "cartesenvoyees") {
-                            $this->ctrlCard->listerEnvoyees();
-                        } else if ($_GET['action'] == "cartesrecues") {
-                            $this->ctrlCard->listerRecues();
-                        }
-                    } else
-                        $this->ctrlAdmin->showAdmin();
+                    /*if (isset($_GET['action'])) {
+                        if ($_GET['action'] == "addCard") {
+                            $this->ctrlCard->ajouterCard();
+                        } else if ($_GET['action'] == "deleteCard") {
+                            $this->ctrlCard->supprimerCard();
+                        }*/
 
                 } else if ($_GET['type'] == 'about') {
                     $this->ctrlAbout->showAbout();

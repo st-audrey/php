@@ -8,6 +8,25 @@
     transition-duration: 1s;
     color:gray;
 }
+
+.btn-delete-card{
+    text-decoration: none!important;
+    color:white;
+    background-color:darkred;
+    border: none;
+    border-radius: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+.btn-delete-card:hover{
+    text-decoration: none!important;
+    color:white;
+    background-color:crimson;
+    transition-duration: 1s;
+}
+
 #contenu{
     height:750px;
 }
@@ -23,6 +42,7 @@
     font-size: large;
     font-family: 'Special Elite', cursive;
 }
+
 .footer-link{
     text-decoration: none;
     color:black;
@@ -34,18 +54,24 @@
     transition-duration: 1s;
     color:gray;
 }
+
 .row-home{
     padding-top:150px;
 }
-#map 
-{
+
+#map {
     height: 400px;  
     width: 100%;  
+}
+#map1 {
+    height: 400px;
+    width: 100%;
 }
 .logo{
     width:20px;
     height:20px;
 }
+
 .logo-envoyees{
     width:150px;
     height:150px;
@@ -56,13 +82,8 @@
     height:150px;
 
 }
-#map1 
-{
-    height: 400px;  
-    width: 100%;  
-}
-#mapleaf 
-{ 
+
+#mapleaf {
     height: 180px; 
 }
 
