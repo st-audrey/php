@@ -27,6 +27,10 @@
     transition-duration: 1s;
 }
 
+.btn-show-card{
+    margin: 5px;
+    width: 20%;
+}
 #contenu{
     height:750px;
 }
@@ -60,12 +64,13 @@
 }
 
 #map {
-    height: 400px;  
-    width: 100%;  
+
+    height: 200px;
+    width: 30%;
 }
 #map1 {
-    height: 400px;
-    width: 100%;
+    height: 200px;
+    width: 30%;
 }
 .logo{
     width:20px;

@@ -1,25 +1,20 @@
-<!-- Pour toutes les cartes envoyees enregistrées dans la bdd, générer :
-un bouton avec l'id de la carte,
-une image de la carte, recto/verso
-les infos (pays, ville..) voire des infos globale sur le pays et la ville voire la dernière news principale
-une map de la ville
-une map du pays
-une map de la route parcourue par la carte
-le nombre de cartes envoyées dans le même pays
-la possibilité de voir sur une map toutes les cartes envoyées dans le meme pays ?-->
-<?php
-print("<table border=\"1\">");
 
-foreach ($cartes as $key => $variable)
-{
-    print("<tr>");
-    print("<td>".$cartes[$key]['country']."</td>");
-    print("<td>".$cartes[$key]['city']."</td>");
-    print("<td>".$cartes[$key]['lat']."</td>");
-    print("<td>".$cartes[$key]['lng']."</td>");
-    print("<tr>");
-}
+<div class="row">
+    <div class="col-4">
+            <?php
+            foreach ($cartes as $key => $variable) {
+                print("<a onclick='showCard(\"" . $cartes[$key]['id'] . "\",\"" . $cartes[$key]['city'] . "\",\"" . $cartes[$key]['country'] . "\",\"" . $cartes[$key]['lat'] . "\",\"" . $cartes[$key]['lng'] . "\",\"" . $cartes[$key]['img'] . "\",\"" . $cartes[$key]['date'] . "\")'><img src='./img/card1.png' class='btn-show-card' alt='carte postale'/></a>");
+            }
+            ?>
+    </div>
+    <div class="col-8">
+        <div id="cardDetail">
+            <!-- ici "happend" infos carte>-->
+        </div>
+    </div>
+</div>
 
-print("</table>");
+<!--<div id='map1'></div>
+  <div id='map'></div>-->
 
-?>
+
