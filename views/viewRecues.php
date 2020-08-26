@@ -1,4 +1,3 @@
-<!--voir views/viewEnvoyees-->
 <?php
 print("<table border=\"1\">");
 

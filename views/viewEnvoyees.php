@@ -1,11 +1,14 @@
-
 <div class="row">
     <div class="col-4">
+        <div class="container-card d-flex flex-wrap">
+            <p class="title">Choissisez une carte postale :</p>
+            <!-- TODO = changer l'image des cartes aléatoirement + faire fonctionner "nth-child"-->
             <?php
             foreach ($cartes as $key => $variable) {
-                print("<a onclick='showCard(\"" . $cartes[$key]['id'] . "\",\"" . $cartes[$key]['city'] . "\",\"" . $cartes[$key]['country'] . "\",\"" . $cartes[$key]['lat'] . "\",\"" . $cartes[$key]['lng'] . "\",\"" . $cartes[$key]['img'] . "\",\"" . $cartes[$key]['date'] . "\")'><img src='./img/card1.png' class='btn-show-card' alt='carte postale'/></a>");
+                print("<a class='link-show-card' onclick='showCard(\"" . $cartes[$key]['id'] . "\",\"" . $cartes[$key]['city'] . "\",\"" . $cartes[$key]['country'] . "\",\"" . $cartes[$key]['lat'] . "\",\"" . $cartes[$key]['lng'] . "\",\"" . $cartes[$key]['img'] . "\",\"" . $cartes[$key]['date'] . "\")'><img src='./img/card1.png' class='btn-show-card' alt='carte postale'/></a>");
             }
             ?>
+        </div>
     </div>
     <div class="col-8">
         <div id="cardDetail">
@@ -14,7 +17,5 @@
     </div>
 </div>
 
-<!--<div id='map1'></div>
-  <div id='map'></div>-->
 
 

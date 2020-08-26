@@ -28,20 +28,32 @@
 }
 
 .btn-show-card{
-    margin: 5px;
-    width: 20%;
+    width: 100%;
 }
+
+.link-show-card{
+    margin-right: 5px;
+    width: 90px;
+
+}
+
 #contenu{
     height:750px;
 }
 
-.container
-{
+.container {
     margin: auto;
     padding:0;
     max-width: 1140px;
 }
-
+.container-card{
+    width:300px;
+    height: 250px;
+}
+.titleHome{
+    font-size: 48px!important;
+    font-family: 'Special Elite', cursive;
+}
 .title{
     font-size: large;
     font-family: 'Special Elite', cursive;
@@ -62,14 +74,27 @@
 .row-home{
     padding-top:150px;
 }
-
+.map-title{
+    margin-left: 85px;
+    font-size: large;
+    font-family: 'Special Elite', cursive;
+}
 #map {
-
+    margin-left: 100px;
+    margin-top: 35px;
     height: 200px;
     width: 30%;
 }
-#map1 {
+#map2 {
+    margin-left: 150px;
+    margin-top: 35px;
     height: 200px;
+    width: 30%;
+}
+.img-city{
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 100px;
     width: 30%;
 }
 .logo{

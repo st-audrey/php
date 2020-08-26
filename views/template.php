@@ -16,7 +16,7 @@
     <header>
         <div class="container">
             <nav class="navbar navbar-light bg-white">
-                <a class="navbar-brand title" href="index.php?type=home">
+                <a class="navbar-brand titleHome" href="index.php?type=home">
                     <img src="./img/logo.png" class="logo-site" alt="logo du site" loading="lazy">
                     myPostcrossing
                 </a>
