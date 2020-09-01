@@ -44,13 +44,67 @@ function showCard(id, city, country, lat, lng, img, date) {
     //TODO = (adapter les noms de pays dans la bdd(ok)) et les imposer sur la page admin when add card
 
     //Find sources that display news in a specific country. Possible options:
-    //ae ar at au be bg br ca ch cn co cu cz de eg fr gb gr hk hu id ie il in it
-    //jp kr lt lv ma mx my ng nl no nz ph pl pt ro rs ru sa se sg si sk th tr tw ua us ve za .
+    //ae = United Arab Emirates
+    //ar = Argentina
+    //at = Austria
+    //au = Australia
+    //be = Belgium
+    //bg = Bulgaria
+    //br = Brazil
+    //ca = Canada
+    //ch = Suisse
+    //cn = Chine
+    //co = Colombia
+    //cu = Cyprus
+    //cz = Czechia
+    //de = Germany
+    //eg = Egypt
+    //fr = France
+    //gb = United Kingdom
+    //gr = Greece
+    //hk = Hong Kong
+    //hu = Hungary
+    //id = Indonesia
+    //ie = Ireland
+    //il = Israel
+    //in = India
+    //it = Italy
+    //jp = Japan
+    //kr = South Korea
+    //lt = Lithuania
+    //lv = Latvia
+    //ma = Morocco
+    //mx = Mexico
+    //my = Malaysia
+    //ng = Nigeria
+    //nl = Netherlands
+    //no = Norway
+    //nz = New Zealand
+    //ph = Philippines
+    //pl = Poland
+    //pt = Portugal
+    //ro = Romania
+    //rs = Serbia
+    //ru = Russia
+    //sa = South Africa
+    //se = Sweden
+    //sg = Singapore
+    //si = Slovenia
+    //sk = Slovakia
+    //th = Thailand
+    //tr = Turkey
+    //tw = Taiwan
+    //ua = Ukraine
+    //us = USA
+    //ve = Venezuela
+    //za = South Africa (Zuid-Afrika is Dutch for South Africa)
     // Default: all countries.
 
     if (country == "Canada"){
         var countryNews = "ca";
     }else if (country == "Chine"){
+        var countryNews = "cn";
+    }else if (country == "Suisse"){
         var countryNews = "ch";
     }else if (country == "France"){
         var countryNews = "fr";
@@ -60,7 +114,7 @@ function showCard(id, city, country, lat, lng, img, date) {
         var countryNews = "jp";
     }else if (country == "Russie"){
         var countryNews = "ru";
-    }else if (country == "Sénégal"){
+    }else if (country == "Singapour"){
         var countryNews = "sg";
     }else if(country == "USA"){
         var countryNews = "us";
@@ -84,13 +138,12 @@ function showCard(id, city, country, lat, lng, img, date) {
             var news = document.getElementById('news');
             var titre = document.createElement('P');
             titre.classList.add("title");
-            titre.append("Dernière news du pays "+country+":");
+            titre.append("Dernière news: ");
             var title = document.createElement('P');
             title.classList.add("news-txt");
-            title.append("Dernières news du pays "+country+":");
             var url = document.createElement('A');
             url.setAttribute("href", jsonData.articles[0].url);
-            url.textContent = "Plus d'infos <"
+            url.textContent = "Plus d'infos <";
 
             title.textContent = jsonData.articles[0].title;
             news.append(titre);
