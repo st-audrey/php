@@ -70,38 +70,56 @@
     transition-duration: 1s;
     color:gray;
 }
-
+#news{
+    border:1px solid slategray;
+    border-radius: 5px;
+}
+.news-txt{
+    font-family: 'Special Elite', cursive;
+    font-size: small;
+}
 .row-home{
     padding-top:150px;
 }
+.zone-info{
+    margin-top: 60px;
+    margin-left: 85px;
+    font-size: large;
+    font-family: 'Special Elite', cursive;
+}
+
 .map-title{
     margin-left: 85px;
     font-size: large;
     font-family: 'Special Elite', cursive;
 }
 #map {
+    border-radius: 5px;
     margin-left: 100px;
     margin-top: 35px;
     height: 200px;
-    width: 30%;
+    width: 40%;
 }
 #map2 {
-    margin-left: 150px;
+    border-radius: 5px;
+    margin-left: 50px;
     margin-top: 35px;
     height: 200px;
-    width: 30%;
+    width: 40%;
 }
 .img-city{
-    height: 200px;
-    margin-top: 50px;
+    border-radius: 5px;
+    height: 250px;
+    margin-top: 30px;
     margin-left: 100px;
-    width: 30%;
+    width: 40%;
 }
 .zone-news{
-    height: 200px;
-    margin-top: 50px;
-    margin-left: 150px;
-    width: 30%;
+    padding: 20px 15px 0 15px;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 40%;
 }
 .logo{
     width:20px;
