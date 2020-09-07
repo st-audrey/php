@@ -35,8 +35,7 @@ function showCard(id, city, country, lat, lng, img, date) {
     infosCarte.appendChild(dateCarte);
     infosCarte.appendChild(destCarte);
 
-
-    //Zone news
+    //zone news
     var newsZone = document.createElement("DIV");
     newsZone.classList.add("zone-news");
     newsZone.setAttribute("id", "news");
@@ -126,7 +125,7 @@ function showCard(id, city, country, lat, lng, img, date) {
     'country='+ countryNews +'&' +
     'apiKey=64793232b58848829439b45b817e9f38';
 
-    console.log(url);
+    var imageDrapeau = "https://www.iplocate.com//assets/img/flag/128h/"+ countryNews +".png";
 
     var req = new Request(url);
     fetch(req)
@@ -153,6 +152,14 @@ function showCard(id, city, country, lat, lng, img, date) {
             //jsonData.articles.forEach(article=>{ ... });
         })
 
+    // zone drapeau
+    var zoneDrapeau = document.createElement("DIV");
+    zoneDrapeau.classList.add("zone-flag");
+    var drapeau = document.createElement("IMG");
+    drapeau.setAttribute("id","flag");
+    drapeau.setAttribute("src", imageDrapeau);
+
+    zoneDrapeau.appendChild(drapeau);
     //zone image
     var imageVille = document.createElement("IMG");
     imageVille.setAttribute("src", "./img/imagesVilles/"+img);
@@ -166,6 +173,8 @@ function showCard(id, city, country, lat, lng, img, date) {
     var mapZone2 = document.createElement("DIV");
     mapZone2.setAttribute("id", "map2");
 
+
+
     detail.appendChild(mapTitle);
     detail.appendChild(row);
     detail.appendChild(row1);
@@ -173,6 +182,7 @@ function showCard(id, city, country, lat, lng, img, date) {
     row.appendChild(mapZone);
     row.appendChild(mapZone2);
     row1.appendChild(infosCarte);
+    row1.appendChild(zoneDrapeau);
     row2.appendChild(imageVille);
     row2.appendChild(newsZone);
 

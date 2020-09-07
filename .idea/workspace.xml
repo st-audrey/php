@@ -23,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/viewRecues.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/viewRecues.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,8 @@
       <workItem from="1598357893931" duration="9705000" />
       <workItem from="1598424691181" duration="22880000" />
       <workItem from="1598625945805" duration="616000" />
-      <workItem from="1598954284167" duration="5898000" />
+      <workItem from="1598954284167" duration="12004000" />
+      <workItem from="1599465728398" duration="2751000" />
     </task>
     <servers />
   </component>

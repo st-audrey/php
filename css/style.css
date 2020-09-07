@@ -36,6 +36,15 @@
     width: 90px;
 
 }
+.zone-flag{
+    width: 30%;
+    height: 200px;
+    margin-left: 80px;
+}
+#flag{
+    padding-left: 50px;
+    padding-top: 30px;
+}
 
 #contenu{
     height:750px;
@@ -86,6 +95,7 @@
     margin-left: 85px;
     font-size: large;
     font-family: 'Special Elite', cursive;
+    width: 40%;
 }
 
 .map-title{
@@ -109,14 +119,14 @@
 }
 .img-city{
     border-radius: 5px;
-    height: 250px;
+    height: 220px;
     margin-top: 30px;
     margin-left: 100px;
     width: 40%;
 }
 .zone-news{
     padding: 20px 15px 0 15px;
-    height: 250px;
+    height: 220px;
     margin-top: 30px;
     margin-left: 50px;
     width: 40%;
